@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(204, 163, 209);
+    color: rgb(46, 2, 82);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.frase {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.ancho {
+    width: 100%;
+}
+
+
+.buscador {
+    margin-top: 1.25%;
+    margin-bottom: 4.5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(46, 2, 82);
+    font-size: 1.1rem;
+    width: 14%; 
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(46, 2, 82);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(214, 154, 248);
+    color: #4c0686;
+}
+
+.boton:hover {
+    background-color: #c4afd4;
+    color: #4c0686;
+    border: 0.1rem solid #4c0686;
+}
+
+.botones {
+    margin-left: 0.6rem;
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(161, 94, 161, 0.596);
+    padding: 0.6rem;
+}
+
+.navegador ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navegador ul li {
+    margin: 0 1.9rem;
+}
+
+.navegador img {
+    width: 4.5rem;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.navegador img:hover {
+    transform: scale(1.5);
+}
+
+.footer {
+    background-color: rgb(138, 106, 138);
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    padding: 1rem;
+    position: static;
+    width: 100%;
+}
+
+.contenedor-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(168, 129, 172);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 24rem;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+    border-bottom: 1px solid white;
+}
+
+.info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.info h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.info p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.borrar {
+    margin-top: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

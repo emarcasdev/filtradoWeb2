@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <!-- Saque de esta pagina el logo de usuario predeterminado -->
+    <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by kmg design - Flaticon</a> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenido">
+        <nav class="navegador">
+            <ul>
+                <li class="logo"><img src="multimedia/logo.png" alt="Logo"></li>
+                <li class="datos"><a href="index.html"><img src="multimedia/home.png" alt="Home"></a></li>
+                <li class="datos"><img src="multimedia/user.png" alt="User"></li>
+            </ul>
+        </nav>
+        <h2 class="frase">Filtrado y búsqueda de usuarios</h2>
+        <div class="buscador">
+            <input class="input botones" type="text" placeholder="Buscar usuario">
+            <button class="boton botones" type="submit">BUSCAR</button>
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                class="boton botones cierre" type="submit">
+                CREAR USUARIO
+            </button>
+        </div>
+
+        <!-- Main modal -->
+        <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            CREACIÓN DE USUARIOS
+                        </h3>
+                        <button class="cierre" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="authentication-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Cerrar modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5">
+                        <form id="creacionUsuarioForm" class="space-y-4">
+                            <div>
+                                <label for="nombre"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+                                <input type="texto" name="nombre" id="nombre"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="Nombre" required />
+                            </div>
+                            <div>
+                                <label for="desc"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripción</label>
+                                <textarea id="desc" name="desc"
+                                    class="ancho bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="Descripción..." required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="creacion w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                CREAR
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-cart">
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Emarcas.</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
